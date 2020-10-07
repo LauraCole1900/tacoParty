@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +10,16 @@
   <link rel="stylesheet" href="assets/style.css">
   <title>Taco Party!</title>
 </head>
+
 <body>
   <div class="container">
+    <!-- header -->
     <header class="pageTop">
       <h1 id="tagline">Welcome to your taco party</h1>
       <p class="subtitle">Your one-stop taco party resource</p>
     </header>
+
+    <!-- Navigation -->
     <nav>
       <div class="nav-wrapper">
         <a href="#" class="brand-logo">Logo</a>
@@ -22,30 +27,46 @@
           <li class="active"><a href="#">Home</a></li>
           <li><a href="taco_recipes.html">Tacos</a></li>
           <li><a href="salsa_recpies.html">Salsas</a></li>
-          <li><a href="drinks.html">Adult beverages</a></li>
+          <li><a href="drinks.html">Beverages</a></li>
         </ul>
       </div>
     </nav>
+
+    <!-- Main content -->
     <main class="row">
-      <div class="col m8 offset-m2">
-        <h2 class="randomTaco">Taco recipe</h2>
-        <button class="favBtn">Favorite?</button>
+
+      <!-- Random taco recipe -->
+      <div class="col m8 offset-m2" id="tacoRecipe">
+        <h2 class="taco">Taco recipe</h2>
+        <!-- Random taco recipe appends here -->
+
+        <!-- "favorite" button if user likes the taco -->
+        <button class="favBtn" id="tacoFav">Favorite?</button>
       </div>
     </main>
     <section class="row">
-      <div class="col m6">
+
+      <!-- Salsa recipe -->
+      <div class="col m6" id="salsaRecipe">
         <h3 class="salsa">Try a salsa</h3>
+        <!-- Random salsa recipe appends here -->
+        
+        <!-- "favorite" button if user likes the salsa -->
+        <button class="favBtn" id="salsaFav">Favorite?</button>
       </div>
+
+      <!-- Taco memes -->
       <div class="col m6" id="meme"></div>
     </section>
 
 
 
   </div>
-  
+
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
   <script src="assets/materialize/js/materialize.js" type="text/javascript"></script>
   <script src="assets/script.js" type="text/javascript"></script>
 </body>
+
 </html>
