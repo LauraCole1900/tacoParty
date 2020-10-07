@@ -29,5 +29,21 @@ $.ajax({
       }
   }
   );}
-
+  //Jean added this for my gif of a taco
+// function gitGif(){
+//     $.ajax({
+//         method: "GET",
+//         url: "https://api.giphy.com/v1/gifs/search?q=Taco&api_key=9CodYBuIUr6P7Ec0hdjjXJaCo5RBFRb3"
+//     })
+//     .then(function(response){
+//         console.log(response)
+//     })
+// }
+// gitGif();
   // attempt to access object variables
+  //on click of gif will disapare
+$("#gif").on("click",function(){
+    $(this).attr("style","display:none")
+    // $(".container").attr("style", "transition: filter 2s")
+    $(".container").attr("style", "filter:blur(0) ")
+})
