@@ -1,5 +1,5 @@
 body {
-  background-color: #430000;
+  background-color: #e1dd00;
   font-family: 'Nunito', sans-serif;
 }
 
@@ -15,7 +15,17 @@ div {
 
 button {
   text-align: center;
+  background-color: #430000;
+  border: 3px solid #e1dd00;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 1.25em;
+}
 
+.container {
+  background-color: #430000;
 }
 
 .pageTop {
@@ -33,5 +43,9 @@ button {
   font-size: 3em;
   text-align: center;
   color: white;
+}
+
+.subtitle {
+  font-size: 2em;
 }
 
