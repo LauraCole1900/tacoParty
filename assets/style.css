@@ -1,0 +1,37 @@
+body {
+  background-color: #430000;
+  font-family: 'Nunito', sans-serif;
+}
+
+h3 {
+  text-align: center;
+  color: white;
+}
+
+/* take this out before going live */
+div {
+  outline: 1px solid lightgray;
+}
+
+button {
+  text-align: center;
+
+}
+
+.pageTop {
+  background-color: #00800d;
+  color: white;
+  font-style: italic;
+  padding: 0.5em 1em;
+}
+
+.nav-wrapper {
+  background-color: #b48400;
+}
+
+.taco {
+  font-size: 3em;
+  text-align: center;
+  color: white;
+}
+
