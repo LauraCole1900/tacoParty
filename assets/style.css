@@ -24,9 +24,13 @@ button {
   font-size: 1.25em;
 }
 
-.container {
+#blur {
   filter: blur(1.5rem);
-  transition: filter 2s;
+  transition: filter 1s;
+  background-color: #430000;
+}
+
+.container {
   background-color: #430000;
 }
 
@@ -52,10 +56,12 @@ button {
 }
 /* jean added this */
 #gif {
+  position: absolute;
+  width: 250px;
   z-index: 100;
   text-align: center;
-  margin:   auto;
+  margin:   0 auto;
   display: block;
-
-
+  left: 30%;
+  bottom: 30%;
 }
