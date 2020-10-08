@@ -32,6 +32,7 @@ button {
 .container {
   background-color: #430000;
   background-image: url("shredded-beef.jpg");
+  border-radius: 0 0 200px 200px;
   /* shredded beef image from https://www.foxandbriar.com/slow-cooker-mexican-shredded-beef/*/
 }
 
@@ -54,6 +55,10 @@ button {
 
 .subtitle {
   font-size: 1.75em;
+}
+
+.BtnDiv {
+  text-align: center;
 }
 
 #tagline {
