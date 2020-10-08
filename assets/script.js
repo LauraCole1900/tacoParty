@@ -1,78 +1,15 @@
-function getTaco(){
+$(document).ready(function () {
 
-var appKey = "9b50da828a1dfe82773e9e4c27d62609"
-var appId = "50ec7bea"
-var urlID = "https://api.edamam.com/search?q=taco&app_id=" + appId + "&app_key=" + appKey
+  
 
-
-  $.ajax({
-      url: urlID,
-      method: "GET",
-      crossDomain: true,
-      dataType: "jsonp"
-  }).then(function(response){
-      console.log(response);
-  })
-}
-
-
-$("#search-button").on("click", function(){
-    var searchDrink = $("#search-value").val();
-    $("#search-value").val("");
-    getDrink(searchDrink)
-})
-
-
-function getDrink(searchDrink){
-    $.ajax({
-        method: "GET",
-        url: "https://www.thecocktaildb.com/api/json/v1/1/random.php?S=" + searchDrink
-    }).then(function(response){
-        console.log(response)
-    })
-}
-
-function getSalsa(){
-    var appKey = "9b50da828a1dfe82773e9e4c27d62609"
-var appId = "50ec7bea"
-var urlID = "https://api.edamam.com/search?q=salsa&app_id=" + appId + "&app_key=" + appKey
-
-  $.ajax({
-      url: urlID,
-      method: "GET",
-      crossDomain: true,
-      dataType: "jsonp"
-  }).then(function(response){
-      console.log(response);
-  })
-}
-
-getTaco()
-getSalsa()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+});
 
 function tacoRecipe(){
+
+getRandomMeme();
+
+
+
 $.ajax({
     method: "GET",
     url: "https://api.edamam.com/search",
@@ -93,38 +30,33 @@ $.ajax({
         console.log("textStatus: "+textStatus)
         console.log("-------------------------------")
         console.log("jqXHR: "+jqXHR);
-  
+        
+        var element = document.getElementById("randomMeme");
+        element.src = getRandomMeme();
+        
+        a
+
       }
   }
   );}
-  //Jean added this for my gif of a taco
-// function gitGif(){
-//     $.ajax({
-//         method: "GET",
-//         url: "https://api.giphy.com/v1/gifs/search?q=Taco&api_key=9CodYBuIUr6P7Ec0hdjjXJaCo5RBFRb3"
-//     })
-//     .then(function(response){
-//         console.log(response)
-//     })
-// }
-// gitGif();
+
+  function getrandomIndex(max) {
+    return Math.floor(Math.random() * Math.floor(max))
+}
+var memeArray= [
+
+    "https://i.pinimg.com/736x/e3/6f/40/e36f40e3cad00b1169c6adc3df103c4d.jpg",
+    "https://thetacotrail.files.wordpress.com/2017/02/nojuanever.jpg?w=500",
+    "https://thetacotrail.files.wordpress.com/2017/02/tacomeme.jpg",
+
+]
+  function getRandomMeme(){
+    var arrayLength= memeArray.length;
+    var selectedMeme= memeArray[getrandomIndex(arrayLength)]
+    console.log(selectedMeme)
+    return selectedMeme
+
+  }
+
+  // look up img tags in HTML for memeArray
   // attempt to access object variables
-  //on click of gif will disapare
-$("#gif").on("click",function(){
-    $(this).attr("style","display:none")
-    // $(".container").attr("style", "transition: filter 2s")
-    $(".container").attr("style", "filter:blur(0) ")
-})
-
-  // attempt to access object variables
-queryUrl = "https://www.thecocktaildb.com/api/json/v1/1/random.php?S=" + searchDrink
-
-
-  // when user is asked what beverage to you prefer beer or margarita
-  // if chooses beer give them a choice of the top mexican beers
-  // get info about the beer
-  // when user chooses cocktail
-  // choose your tequila type 
-  // it will randomly give a recipe based on which tequila you prefer
-  //
-
