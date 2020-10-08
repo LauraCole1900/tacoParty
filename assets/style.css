@@ -13,7 +13,8 @@ h2 {
   text-shadow: 2px 2px 5px black, 2px 2px 5px black, 2px 2px 5px black, 2px 2px 5px black;
 }
 
-/* take this out before going live */
+/* ============================================================================= */
+/* ====================== take this out before going live ====================== */
 div {
   outline: 1px solid lightgray;
 }
@@ -32,6 +33,7 @@ button {
 .container {
   background-color: #430000;
   background-image: url("shredded-beef.jpg");
+  border-radius: 0 0 200px 200px;
   /* shredded beef image from https://www.foxandbriar.com/slow-cooker-mexican-shredded-beef/*/
 }
 
@@ -50,10 +52,16 @@ button {
   background-image: url("shredded-cheese.jpg");
   text-shadow: 2px 2px 5px black, 2px 2px 5px black, 2px 2px 5px black, 2px 2px 5px black;
   /* shredded cheese image from https://theoutline.com/post/6016/shredded-cheese-memes?zd=1&zi=tin5bojm*/
+  border-left: 2px darkgoldenrod solid;
+  border-right: 2px darkgoldenrod solid;
 }
 
 .subtitle {
   font-size: 1.75em;
+}
+
+.BtnDiv {
+  text-align: center;
 }
 
 #tagline {
