@@ -28,6 +28,8 @@ button {
   filter: blur(1.5rem);
   transition: filter 2s;
   background-color: #430000;
+  background-image: url("shredded-beef.jpg");
+  /* shredded beef image from https://www.foxandbriar.com/slow-cooker-mexican-shredded-beef/*/
 }
 
 .pageTop {
@@ -35,10 +37,14 @@ button {
   color: white;
   font-style: italic;
   padding: 0.5em 1em;
+  background-image: url("shredded-lettuce.jpg");
+  /* shredded lettuce image from https://www.taylorfarmsfoodservice.com/products/iceberg-romaine/*/
 }
 
 .nav-wrapper {
   background-color: #b48400;
+  background-image: url("shredded-cheese.jpg");
+  /* shredded cheese image from https://theoutline.com/post/6016/shredded-cheese-memes?zd=1&zi=tin5bojm*/
 }
 
 .taco {
@@ -50,6 +56,7 @@ button {
 .subtitle {
   font-size: 2em;
 }
+
 /* jean added this */
 #gif {
   z-index: 100;
