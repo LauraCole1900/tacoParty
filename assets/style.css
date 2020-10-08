@@ -1,0 +1,61 @@
+body {
+  background-color: #e1dd00;
+  font-family: 'Nunito', sans-serif;
+}
+
+h3 {
+  text-align: center;
+  color: white;
+}
+
+/* take this out before going live */
+div {
+  outline: 1px solid lightgray;
+}
+
+button {
+  text-align: center;
+  background-color: #430000;
+  border: 3px solid #e1dd00;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 1.25em;
+}
+
+.container {
+  filter: blur(1.5rem);
+  transition: filter 2s;
+  background-color: #430000;
+}
+
+.pageTop {
+  background-color: #00800d;
+  color: white;
+  font-style: italic;
+  padding: 0.5em 1em;
+}
+
+.nav-wrapper {
+  background-color: #b48400;
+}
+
+.taco {
+  font-size: 3em;
+  text-align: center;
+  color: white;
+}
+
+.subtitle {
+  font-size: 2em;
+}
+/* jean added this */
+#gif {
+  z-index: 100;
+  text-align: center;
+  margin:   auto;
+  display: block;
+
+
+}
