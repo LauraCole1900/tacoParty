@@ -116,3 +116,15 @@ $("#gif").on("click",function(){
     $(".container").attr("style", "filter:blur(0) ")
 })
 
+  // attempt to access object variables
+queryUrl = "https://www.thecocktaildb.com/api/json/v1/1/random.php?S=" + searchDrink
+
+
+  // when user is asked what beverage to you prefer beer or margarita
+  // if chooses beer give them a choice of the top mexican beers
+  // get info about the beer
+  // when user chooses cocktail
+  // choose your tequila type 
+  // it will randomly give a recipe based on which tequila you prefer
+  //
+
