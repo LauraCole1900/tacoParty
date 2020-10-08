@@ -1,6 +1,8 @@
 body {
   background-color: #e1dd00;
   font-family: 'Nunito', sans-serif;
+  background-image: url("taco-shell.jpg");
+  /* taco shell image taken by Brendon Hart */
 }
 
 h2 {
@@ -8,7 +10,7 @@ h2 {
   text-align: center;
   font-size: 3em;
   color: white;
-  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+  text-shadow: 2px 2px 5px black, 2px 2px 5px black, 2px 2px 5px black, 2px 2px 5px black;
 }
 
 /* take this out before going live */
@@ -37,7 +39,7 @@ button {
   background-color: #00800d;
   color: white;
   font-style: italic;
-  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+  text-shadow: 2px 2px 5px black, 2px 2px 5px black, 2px 2px 5px black, 2px 2px 5px black;
   padding: 0.5em 1em;
   background-image: url("shredded-lettuce.jpg");
   /* shredded lettuce image from https://www.taylorfarmsfoodservice.com/products/iceberg-romaine/*/
@@ -46,7 +48,7 @@ button {
 .nav-wrapper {
   background-color: #b48400;
   background-image: url("shredded-cheese.jpg");
-  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+  text-shadow: 2px 2px 5px black, 2px 2px 5px black, 2px 2px 5px black, 2px 2px 5px black;
   /* shredded cheese image from https://theoutline.com/post/6016/shredded-cheese-memes?zd=1&zi=tin5bojm*/
 }
 
