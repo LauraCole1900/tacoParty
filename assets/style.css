@@ -25,6 +25,8 @@ button {
 }
 
 .container {
+  filter: blur(1.5rem);
+  transition: filter 2s;
   background-color: #430000;
 }
 
@@ -48,4 +50,12 @@ button {
 .subtitle {
   font-size: 2em;
 }
+/* jean added this */
+#gif {
+  z-index: 100;
+  text-align: center;
+  margin:   auto;
+  display: block;
 
+
+}
