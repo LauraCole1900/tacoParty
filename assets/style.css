@@ -157,3 +157,10 @@ img {
   color: white;
   text-align:left;
 }
+
+/* Brendon added this */
+.card {
+  text-align: center;
+  background: rgba(0,0,0,.7);
+  color: white;
+}
