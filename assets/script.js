@@ -98,5 +98,79 @@ $(document).ready(function () {
 
 });
 
+var appKey = "9b50da828a1dfe82773e9e4c27d62609";
+var appId = "50ec7bea";
+var urlID =
+  "https://api.edamam.com/search?q=taco&app_id=" + appId + "&app_key=" + appKey;
+var urlID2 = "https://api.edamam.com/search?q=salsa&app_id=" + appId + "&app_key=" + appKey;
+
+
+$(".tacoButton").on("click", function(){
+    getTaco()
+})
+
+$(".salsaButton").on("click", function(){
+    getSalsa()
+})
+
+function getTaco() {
+  $.ajax({
+    url: urlID,
+    method: "GET",
+    crossDomain: true,
+    dataType: "jsonp",
+  }).then(function (response) {
+      console.log(response)
+
+        $("#randomTaco").empty()
+
+        var returnAnswer = Math.floor(Math.random() * 9) + 1
+
+        var tacoPlace = $("<div>").addClass("card")
+        var tacoTitle = $("<h3>")
+        .addClass("tacoTitle")
+        .text(response.hits[returnAnswer].recipe.label);
+        var tacoImage = $("<img>")
+        .addClass("card-img")
+        .attr("src", response.hits[returnAnswer].recipe.image);
+        var tacoIngredients = $("<p>")
+        .addClass("card-body")
+        .text(response.hits[returnAnswer].recipe.ingredientLines)
+
+        tacoPlace.append(tacoTitle, tacoImage, tacoIngredients)
+        $("#randomTaco").append(tacoPlace)
+
+    })}
+
+    function getSalsa() {
+        $.ajax({
+          url: urlID2,
+          method: "GET",
+          crossDomain: true,
+          dataType: "jsonp",
+        }).then(function (response) {
+            console.log(response)
+      
+              $("#randomSalsa").empty()
+      
+              var returnAnswer = Math.floor(Math.random() * 9) + 1
+      
+              var salsaPlace = $("<div>").addClass("card")
+              var salsaTitle = $("<h3>")
+              .addClass("salsaTitle")
+              .text(response.hits[returnAnswer].recipe.label);
+              var salsaImage = $("<img>")
+              .addClass("card-img")
+              .attr("src", response.hits[returnAnswer].recipe.image);
+              var salsaIngredients = $("<p>")
+              .addClass("card-body")
+              .text(response.hits[returnAnswer].recipe.ingredientLines)
+      
+              salsaPlace.append(salsaTitle, salsaImage, salsaIngredients)
+              $("#randomSalsa").append(salsaPlace)
+      
+          })}
+
+
   // look up img tags in HTML for memeArray
   // attempt to access object variables
