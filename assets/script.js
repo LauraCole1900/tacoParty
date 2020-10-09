@@ -3,11 +3,12 @@ $(document).ready(function () {
   // makes hamburger button function for mobile
   $(".sidenav").sidenav();
 
+
   // click taco gif to enter page
   $("#gif").on("click", function () {
-    $(this).attr("style", "display:none")
+    $(this).hide()
     // $(".container").attr("style", "transition: filter 2s")
-    $(".container").attr("style", "filter:blur(0) ")
+    $(".container").attr("style", "filter:none")
   })
 
 
