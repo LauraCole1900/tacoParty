@@ -1,5 +1,8 @@
 $(document).ready(function () {
 
+  // makes hamburger button function for mobile
+  $(".sidenav").sidenav();
+
   // click taco gif to enter page
   $("#gif").on("click", function () {
     $(this).attr("style", "display:none")
@@ -7,8 +10,6 @@ $(document).ready(function () {
     $(".container").attr("style", "filter:blur(0) ")
   })
 
-  // makes hamburger button function
-  $(".sidenav").sidenav();
 
 
 
