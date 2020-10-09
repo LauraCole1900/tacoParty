@@ -48,7 +48,11 @@ button {
 }
 
 .subtitle {
-  font-size: 1.75em;
+  color: white;
+  font-style: italic;
+  font-family: 'Luckiest Guy', cursive;
+  text-shadow: 2px 2px 5px black, 2px 2px 5px black, 2px 2px 5px black, 2px 2px 5px black;
+  font-size: 2em;
 }
 
 .nav-wrapper {
@@ -60,6 +64,12 @@ button {
   /* shredded cheese image from https://theoutline.com/post/6016/shredded-cheese-memes?zd=1&zi=tin5bojm*/
 }
 
+.logo {
+  width: 64px;
+  border-radius: 50%;
+  border: 3px solid #430000;
+}
+
 .BtnDiv {
   text-align: center;
 }
@@ -67,6 +77,13 @@ button {
 #tagline {
   font-family: 'Luckiest Guy', cursive;
   font-size: 5em;
+}
+
+#subhead {
+  background-color: #aa2c2c;
+  background-image: url("salsa.jpg");
+  margin: -25px 0;
+  padding: 0.5em;
 }
 
 /* jean added this */
