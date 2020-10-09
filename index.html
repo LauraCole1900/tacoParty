@@ -15,15 +15,18 @@
   <div id="blur" class="container">
     <!-- header -->
     <header class="pageTop">
-      <h1 id="tagline">Welcome to your taco party</h1>
-      <p class="subtitle">Your one-stop taco party resource</p>
+      <h1 id="tagline">Taco Party</h1>
     </header>
-    
+    <div id="subhead">
+      <p class="subtitle">Plan your party, eat your taco</p>
+    </div>
+
     <!-- Navigation -->
     <nav>
       <div class="nav-wrapper">
-        <a href="#" class="brand-logo">Logo</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <a href="#" class="brand-logo"><img src="assets/taco-party-logo_00000.png" alt="taco party logo" class="logo responsive-img" /></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
           <li class="active"><a href="#">Home</a></li>
           <li><a href="tacoRecipes.html">Tacos</a></li>
           <li><a href="salsaRecipes.html">Salsas</a></li>
@@ -38,6 +41,9 @@
       <!-- Random taco recipe -->
       <div class="col m8 offset-m2" id="tacoRecipe">
         <h2 class="taco">Taco recipe</h2>
+        <button class="tacoButton">Generate a Random Taco</button>
+        <div id="randomTaco"></div>
+
         <!-- Random taco recipe appends here -->
         
         <!-- "favorite" button if user likes the taco -->
@@ -48,7 +54,9 @@
       
       <!-- Salsa recipe -->
       <div class="col m6" id="salsaRecipe">
-        <h3 class="salsa">Try a salsa</h3>
+        <h2 class="salsa">Try a salsa</h2>
+        <button class="salsaButton">Generate a random Salsa</button>
+        <div id="randomSalsa"></div>
         <!-- Random salsa recipe appends here -->
         
         <!-- "favorite" button if user likes the salsa -->
@@ -60,17 +68,17 @@
     </section>
   </div>
   
-    <div id="gif"> 
-      <img  src="https://media3.giphy.com/media/3o6ZtkmiFtpBvii6uQ/giphy.gif?cid=ecf05e47bytkwul5u8oi8wkl98zlnebkmx4uo4upjmwet9ua&rid=giphy.gif" />
-      <p>Click Me!
-      </p>
-    </div>
 
-    
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
-    <script src="assets/materialize/js/materialize.js" type="text/javascript"></script>
-    <script src="assets/script.js" type="text/javascript"></script>
+  <div id="gif">
+    <img src="assets/taco-gif3--final-4.gif" alt="dancing taco button" />
+    <!-- original dancing taco gif from https://media3.giphy.com/media/3o6ZtkmiFtpBvii6uQ/giphy.gif?cid=ecf05e47bytkwul5u8oi8wkl98zlnebkmx4uo4upjmwet9ua&rid=giphy.gif-->
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+  <script src="assets/materialize/js/materialize.js" type="text/javascript"></script>
+  <script src="assets/script.js" type="text/javascript"></script>
 </body>
 
 </html>
