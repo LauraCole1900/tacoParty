@@ -21,7 +21,7 @@ $(document).ready(function(){
         //for(i=0; i < data.strIngredient; i++){
           //if(data.strDrink[i].dt_txt.indexOf("drinkType") !==1) {
         $("#drinkType").empty()
-        var name = $("<h1>").text("Drink Name: " + data.drinks[0].strDrink)
+        var name = $("<h2>").text("Drink Name: " + data.drinks[0].strDrink)
         console.log(name)
         var recipe1 = $("<p>").addClass("card-text").text("Recipe: " + data.drinks[0].strIngredient1)
         var recipe2 = $("<p>").addClass("card-text").text("Recipe: " + data.drinks[0].strIngredient2)

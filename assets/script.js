@@ -127,7 +127,7 @@ function getTaco() {
         var returnAnswer = Math.floor(Math.random() * 9) + 1
 
         var tacoPlace = $("<div>").addClass("card")
-        var tacoTitle = $("<h3>")
+        var tacoTitle = $("<h2>")
         .addClass("tacoTitle")
         .text(response.hits[returnAnswer].recipe.label);
         var tacoImage = $("<img>")
