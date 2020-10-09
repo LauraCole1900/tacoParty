@@ -28,7 +28,7 @@ $.ajax({
         $("#tacoContent" + i).append(tacoTitle);
 
         var tacoImg = $("<img>")
-        tacoImg.attr("src", response.hits[i].recipe.image).attr("id", "gridImg")
+        tacoImg.attr("src", response.hits[i].recipe.image).attr("id", "gridImg").addClass("responsive-img");
         $("#tacoContent" + i).append(tacoImg);
     };
         
@@ -147,7 +147,7 @@ $.ajax({
         $("#salsaContent" + i).append(salsaTitle);
 
         var salsaImg = $("<img>")
-        salsaImg.attr("src", response.hits[i].recipe.image).attr("id", "gridImg") 
+        salsaImg.attr("src", response.hits[i].recipe.image).attr("id", "gridImg").addClass("responsive-img");
         $("#salsaContent" + i).append(salsaImg);
     }; 
     
@@ -267,7 +267,7 @@ $.ajax({
 
 
         var drinkImg = $("<img>")
-        drinkImg.attr("src", response.drinks[i].strDrinkThumb).attr("id", "gridImg")
+        drinkImg.attr("src", response.drinks[i].strDrinkThumb).attr("id", "gridImg").addClass("responsive-img");
         $("#drinkContent" + i).append(drinkImg);
 
     }
@@ -407,7 +407,7 @@ for(var i=6; i< 9; i++){
 
 
     var drinkImg = $("<img>")
-    drinkImg.attr("src", response.drinks[(i-4)].strDrinkThumb).attr("id", "gridImg");
+    drinkImg.attr("src", response.drinks[(i-4)].strDrinkThumb).attr("id", "gridImg").addClass("responsive-img");
     $("#drinkContent" + i).append(drinkImg);
 
 }   
