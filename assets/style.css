@@ -86,3 +86,57 @@ button {
   transition: filter 1s;
   background-color: #430000;
 }
+
+/* ANDY ADDITIONS */
+
+/* This is the headline style I'm using for each recipe */
+#gridHeadlines {
+  font-size: 18px;
+  color: white;
+}
+
+/* Boxes: These Control Each Box Recipes Appear Inside */
+.tacoBox {
+  height: 1000px;
+  text-align: center;
+  background: rgba(0,0,0,.7);
+
+}
+
+.salsaBox {
+  height: 650px;
+  text-align: center;
+  background: rgba(0,0,0,.7);
+}
+
+.drinkBox {
+  height: 550px;
+  text-align: center;
+  background: rgba(0,0,0,.7);
+}
+
+/* This resizes the Recipe image to fit columns */
+
+img {
+  width: 250px;
+}
+
+/* This styles all the Recipe copy */
+
+.tacoRecipes {
+  font-size: 12px;
+  color: white;
+  text-align:left;
+}
+
+.salsaRecipes {
+  font-size: 12px;
+  color: white;
+  text-align:left;
+}
+
+.drinkRecipes {
+  font-size: 12px;
+  color: white;
+  text-align:left;
+}
