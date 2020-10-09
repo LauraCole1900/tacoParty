@@ -1,14 +1,20 @@
 body {
   background-color: #e1dd00;
   font-family: 'Nunito', sans-serif;
+  background-image: url("taco-shell.jpg");
+  /* taco shell image taken by Brendon Hart */
 }
 
-h3 {
+h2 {
+  font-family: 'Luckiest Guy', cursive;
   text-align: center;
+  font-size: 3em;
   color: white;
+  text-shadow: 2px 2px 5px black, 2px 2px 5px black, 2px 2px 5px black, 2px 2px 5px black;
 }
 
-/* take this out before going live */
+/* ============================================================================= */
+/* ====================== take this out before going live ====================== */
 div {
   outline: 1px solid lightgray;
 }
@@ -24,15 +30,10 @@ button {
   font-size: 1.25em;
 }
 
-#blur {
-  filter: blur(1.5rem);
-  transition: filter 1s;
-  background-color: #430000;
-}
-
 .container {
   background-color: #430000;
   background-image: url("shredded-beef.jpg");
+  border-radius: 0 0 200px 200px;
   /* shredded beef image from https://www.foxandbriar.com/slow-cooker-mexican-shredded-beef/*/
 }
 
@@ -40,25 +41,49 @@ button {
   background-color: #00800d;
   color: white;
   font-style: italic;
+  text-shadow: 2px 2px 5px black, 2px 2px 5px black, 2px 2px 5px black, 2px 2px 5px black;
   padding: 0.5em 1em;
   background-image: url("shredded-lettuce.jpg");
   /* shredded lettuce image from https://www.taylorfarmsfoodservice.com/products/iceberg-romaine/*/
 }
 
+.subtitle {
+  color: white;
+  font-style: italic;
+  font-family: 'Luckiest Guy', cursive;
+  text-shadow: 2px 2px 5px black, 2px 2px 5px black, 2px 2px 5px black, 2px 2px 5px black;
+  font-size: 2em;
+}
+
 .nav-wrapper {
   background-color: #b48400;
   background-image: url("shredded-cheese.jpg");
+  text-shadow: 2px 2px 5px black, 2px 2px 5px black, 2px 2px 5px black, 2px 2px 5px black;
+  border-left: 2px darkgoldenrod solid;
+  border-right: 2px darkgoldenrod solid;
   /* shredded cheese image from https://theoutline.com/post/6016/shredded-cheese-memes?zd=1&zi=tin5bojm*/
 }
 
-.taco {
-  font-size: 3em;
-  text-align: center;
-  color: white;
+.logo {
+  width: 64px;
+  border-radius: 50%;
+  border: 3px solid #430000;
 }
 
-.subtitle {
-  font-size: 2em;
+.BtnDiv {
+  text-align: center;
+}
+
+#tagline {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 5em;
+}
+
+#subhead {
+  background-color: #aa2c2c;
+  background-image: url("salsa.jpg");
+  margin: -25px 0;
+  padding: 0.5em;
 }
 
 /* jean added this */
@@ -67,8 +92,68 @@ button {
   width: 250px;
   z-index: 100;
   text-align: center;
-  margin:   0 auto;
+  margin: 0 auto;
   display: block;
   left: 30%;
   bottom: 30%;
+}
+
+#blur {
+  filter: blur(1.5rem);
+  transition: filter 1s;
+  background-color: #430000;
+}
+
+/* ANDY ADDITIONS */
+
+/* This is the headline style I'm using for each recipe */
+#gridHeadlines {
+  font-size: 18px;
+  color: white;
+}
+
+/* Boxes: These Control Each Box Recipes Appear Inside */
+.tacoBox {
+  height: 1000px;
+  text-align: center;
+  background: rgba(0,0,0,.7);
+
+}
+
+.salsaBox {
+  height: 650px;
+  text-align: center;
+  background: rgba(0,0,0,.7);
+}
+
+.drinkBox {
+  height: 550px;
+  text-align: center;
+  background: rgba(0,0,0,.7);
+}
+
+/* This resizes the Recipe image to fit columns */
+
+img {
+  width: 250px;
+}
+
+/* This styles all the Recipe copy */
+
+.tacoRecipes {
+  font-size: 12px;
+  color: white;
+  text-align:left;
+}
+
+.salsaRecipes {
+  font-size: 12px;
+  color: white;
+  text-align:left;
+}
+
+.drinkRecipes {
+  font-size: 12px;
+  color: white;
+  text-align:left;
 }

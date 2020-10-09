@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/materialize/css/materialize.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Nunito&display=swap" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="assets/materialize/css/materialize.min.css" media="screen,projection" />
   <link rel="stylesheet" href="assets/style.css">
   <title>Taco Party!</title>
 </head>
@@ -15,24 +16,34 @@
   <div id="blur" class="container">
     <!-- header -->
     <header class="pageTop">
-      <h1 id="tagline">Welcome to your taco party</h1>
-      <p class="subtitle">Your one-stop taco party resource</p>
+      <h1 id="tagline">Taco Party</h1>
     </header>
+    <div id="subhead">
+      <p class="subtitle">Plan your party, eat your taco</p>
+    </div>
 
     <!-- Navigation -->
     <nav>
       <div class="nav-wrapper">
-        <a href="#" class="brand-logo">Logo</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <a href="#" class="brand-logo"><img src="assets/taco-party-logo_00000.png" alt="taco party logo" class="logo responsive-img" /></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
           <li class="active"><a href="#">Home</a></li>
           <li><a href="tacoRecipes.html">Tacos</a></li>
           <li><a href="salsaRecipes.html">Salsas</a></li>
-
           <li><a href="drinks.html">Beverages</a></li>
         </ul>
       </div>
     </nav>
-    
+
+    <!-- Mobile navigation -->
+    <ul class="sidenav" id="mobile-demo">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="tacoRecipes.html">Tacos</a></li>
+      <li><a href="salsaRecipes.html">Salsas</a></li>
+      <li><a href="drinks.html">Beverages</a></li>
+    </ul>
+
     <!-- Main content -->
     <main class="row">
 
@@ -42,35 +53,39 @@
         <!-- Random taco recipe appends here -->
 
         <!-- "favorite" button if user likes the taco -->
-        <button class="favBtn" id="tacoFav">Favorite?</button>
+        <div class="BtnDiv">
+          <button class="favBtn" id="tacoFav">Favorite?</button>
+        </div>
       </div>
     </main>
 
     <section class="row">
       <!-- Salsa recipe -->
       <div class="col m6" id="salsaRecipe">
-        <h3 class="salsa">Try a salsa</h3>
+        <h2 class="salsa">Try a salsa</h2>
         <!-- Random salsa recipe appends here -->
 
         <!-- "favorite" button if user likes the salsa -->
-        <button class="favBtn" id="salsaFav">Favorite?</button>
+        <div class="BtnDiv">
+          <button class="favBtn" id="salsaFav">Favorite?</button>
+        </div>
       </div>
-      
+
       <!-- Taco memes -->
       <div class="col m6" id="meme"></div>
     </section>
   </div>
-  
+
   <div id="gif">
-  <img  src="https://media3.giphy.com/media/3o6ZtkmiFtpBvii6uQ/giphy.gif?cid=ecf05e47bytkwul5u8oi8wkl98zlnebkmx4uo4upjmwet9ua&rid=giphy.gif" />
+    <img src="assets/taco-gif3--final-4.gif" alt="dancing taco button" />
+    <!-- original dancing taco gif from https://media3.giphy.com/media/3o6ZtkmiFtpBvii6uQ/giphy.gif?cid=ecf05e47bytkwul5u8oi8wkl98zlnebkmx4uo4upjmwet9ua&rid=giphy.gif-->
   </div>
-    
-    
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
-    <script src="assets/materialize/js/materialize.js" type="text/javascript"></script>
-    <script src="assets/script.js" type="text/javascript"></script>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+  <script src="assets/materialize/js/materialize.js" type="text/javascript"></script>
+  <script src="assets/script.js" type="text/javascript"></script>
 </body>
 
 </html>
-

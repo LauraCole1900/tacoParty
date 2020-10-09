@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/materialize/css/materialize.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Nunito&display=swap" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="assets/materialize/css/materialize.min.css" media="screen,projection" />
   <link rel="stylesheet" href="assets/style.css">
   <title>Taco Party Salsas</title>
 </head>
@@ -15,15 +16,18 @@
   <div class="container">
     <!-- header -->
     <header class="pageTop">
-      <h1 id="tagline">Welcome to your taco party</h1>
-      <p class="subtitle">Your one-stop taco party resource</p>
+      <h1 id="tagline">Taco Party</h1>
     </header>
+    <div id="subhead">
+      <p class="subtitle">Plan your party, eat your taco</p>
+    </div>
 
     <!-- Navigation -->
     <nav>
       <div class="nav-wrapper">
-        <a href="#" class="brand-logo">Logo</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <a href="index.html" class="brand-logo"><img src="assets/taco-party-logo_00000.png" alt="taco party logo" class="logo responsive-img" /></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
           <li><a href="index.html">Home</a></li>
           <li><a href="tacoRecipes.html">Tacos</a></li>
           <li class="active"><a href="#">Salsas</a></li>
@@ -32,11 +36,54 @@
       </div>
     </nav>
 
-    <!-- Main content -->
-    <main class="row">
-      <!-- salsa recipes go here -->
+    <!-- Mobile navigation -->
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="tacoRecipes.html">Tacos</a></li>
+      <li class="active"><a href="#">Salsas</a></li>
+      <li><a href="drinks.html">Beverages</a></li>
+    </ul>
 
-    </main>
+    <!-- Main content -->
+    <!-- Salsa Line 1 -->
+    <div class="row">
+      <div class="col s4 salsaBox" id="salsaContent0">
+        
+        <!-- box 1 -->
+
+      </div>
+      <div class="col s4 salsaBox" id="salsaContent1">
+        
+        <!-- box 2 -->
+
+      </div>
+      <div class="col s4 salsaBox" id="salsaContent2">
+        
+        <!-- box 3 -->
+
+      </div>
+    </div>
+    
+    <!-- Taco Line 2 -->
+    <div class="row">
+      <div class="col s4 salsaBox" id="salsaContent3">        
+      </div>
+      <div class="col s4 salsaBox" id="salsaContent4">
+      </div>
+      <div class="col s4 salsaBox" id="salsaContent5">
+        
+      </div>
+    </div> 
+    
+    <!-- Taco Line 3 -->
+    <div class="row">
+      <div class="col s4 salsaBox" id="salsaContent6">
+      </div>
+      <div class="col s4 salsaBox" id="salsaContent7">
+      </div>
+      <div class="col s4 salsaBox" id="salsaContent8">
+      </div>
+    </div>
 
 
   </div>
@@ -44,7 +91,7 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
   <script src="assets/materialize/js/materialize.js" type="text/javascript"></script>
-  <script src="assets/script.js" type="text/javascript"></script>
+  <script src="allTacoRecipeScript.js" type="text/javascript"></script>
 
 </body>
 

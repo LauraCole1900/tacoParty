@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/materialize/css/materialize.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Nunito&display=swap" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="assets/materialize/css/materialize.min.css" media="screen,projection" />
   <link rel="stylesheet" href="assets/style.css">
   <title>Taco Party Tacos</title>
 </head>
@@ -13,15 +14,18 @@
   <div class="container">
     <!-- header -->
     <header class="pageTop">
-      <h1 id="tagline">Welcome to your taco party</h1>
-      <p class="subtitle">Your one-stop taco party resource</p>
+      <h1 id="tagline">Taco Party</h1>
     </header>
+    <div id="subhead">
+      <p class="subtitle">Plan your party, eat your taco</p>
+    </div>
 
     <!-- Navigation -->
     <nav>
       <div class="nav-wrapper">
-        <a href="#" class="brand-logo">Logo</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <a href="index.html" class="brand-logo"><img src="assets/taco-party-logo_00000.png" alt="taco party logo" class="logo responsive-img" /></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
           <li><a href="index.html">Home</a></li>
           <li class="active"><a href="#">Tacos</a></li>
           <li><a href="salsaRecipes.html">Salsas</a></li>
@@ -30,13 +34,54 @@
       </div>
     </nav>
 
+    <!-- Mobile navigation -->
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="index.html">Home</a></li>
+      <li class="active"><a href="#">Tacos</a></li>
+      <li><a href="salsaRecipes.html">Salsas</a></li>
+      <li><a href="drinks.html">Beverages</a></li>
+    </ul>
+
     <!-- Main content -->
-    <main class="row">
-      <!-- taco recipes go here -->
-      
-    </main>
+    <!-- Taco Line 1 -->
+    <div class="row">
+      <div class="w3 col s4 tacoBox" id="tacoContent0">
 
+        <!-- box 0 -->
+      </div>
+      <div class="w3 col s4 tacoBox" id="tacoContent1"> 
 
+        <!-- box 1 -->
+      </div>
+      <div class="w3 col s4 tacoBox" id="tacoContent2">
+        
+        <!-- box Etc... -->
+      </div>
+    </div>
+    
+    <!-- Taco Line 2 -->
+    <div class="row">
+      <div class="w3 col s4 tacoBox" id="tacoContent3">     
+      </div>
+      <div class="w3 col s4 tacoBox" id="tacoContent4">
+        <div class="headlineBox0"></div>
+      </div>
+      <div class="w3 col s4 tacoBox" id="tacoContent5">
+        
+      </div>
+    </div> 
+    
+    <!-- Taco Line 3 -->
+    <div class="row">
+      <div class="w3 col s4 tacoBox" id="tacoContent6">
+      </div>
+      <div class="w3 col s4 tacoBox" id="tacoContent7">
+      </div>
+      <div class="w3 col s4 tacoBox" id="tacoContent8">
+      </div>
+    </div>
+
+    <!-- Container Ends -->
   </div>
 
 
