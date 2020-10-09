@@ -47,17 +47,17 @@ button {
   /* shredded lettuce image from https://www.taylorfarmsfoodservice.com/products/iceberg-romaine/*/
 }
 
+.subtitle {
+  font-size: 1.75em;
+}
+
 .nav-wrapper {
   background-color: #b48400;
   background-image: url("shredded-cheese.jpg");
   text-shadow: 2px 2px 5px black, 2px 2px 5px black, 2px 2px 5px black, 2px 2px 5px black;
-  /* shredded cheese image from https://theoutline.com/post/6016/shredded-cheese-memes?zd=1&zi=tin5bojm*/
   border-left: 2px darkgoldenrod solid;
   border-right: 2px darkgoldenrod solid;
-}
-
-.subtitle {
-  font-size: 1.75em;
+  /* shredded cheese image from https://theoutline.com/post/6016/shredded-cheese-memes?zd=1&zi=tin5bojm*/
 }
 
 .BtnDiv {

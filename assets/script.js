@@ -7,6 +7,9 @@ $(document).ready(function () {
     $(".container").attr("style", "filter:blur(0) ")
   })
 
+  // makes hamburger button function
+  $(".sidenav").sidenav();
+
 
 
 

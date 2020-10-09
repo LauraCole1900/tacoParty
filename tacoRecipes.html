@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/materialize/css/materialize.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Nunito&display=swap" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="assets/materialize/css/materialize.min.css" media="screen,projection" />
   <link rel="stylesheet" href="assets/style.css">
   <title>Taco Party Tacos</title>
 </head>
@@ -20,8 +21,9 @@
     <!-- Navigation -->
     <nav>
       <div class="nav-wrapper">
-        <a href="#" class="brand-logo">Logo</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <a href="#" class="brand-logo">Taco Party</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
           <li><a href="index.html">Home</a></li>
           <li class="active"><a href="#">Tacos</a></li>
           <li><a href="salsaRecipes.html">Salsas</a></li>
@@ -29,6 +31,14 @@
         </ul>
       </div>
     </nav>
+
+    <!-- Mobile navigation -->
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="index.html">Home</a></li>
+      <li class="active"><a href="#">Tacos</a></li>
+      <li><a href="salsaRecipes.html">Salsas</a></li>
+      <li><a href="drinks.html">Beverages</a></li>
+    </ul>
 
     <!-- Main content -->
     <main class="row">
