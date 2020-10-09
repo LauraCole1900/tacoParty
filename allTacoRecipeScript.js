@@ -1,3 +1,9 @@
+$(document).ready(function () {
+
+    // makes hamburger button function
+    $(".sidenav").sidenav();
+
+
 //////////////////////////
 // TACO DATA COLLECTION //
 //////////////////////////
@@ -447,3 +453,4 @@ for(var i=6; i< 9; i++){
 })
 
 $("img")
+});
