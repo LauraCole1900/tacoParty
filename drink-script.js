@@ -34,6 +34,6 @@ $(document).ready(function(){
         cardBody.append(name,recipe1,recipe2,recipe3,recipe4,recipe5,instructions)
         card.append(cardBody)
         $("#drinkType").append(card)
-        getDrinks(drinkType)
+        drinkSearch(drinkType)
 
       }})}})
