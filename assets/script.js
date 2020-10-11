@@ -55,9 +55,9 @@ $(document).ready(function () {
   function getRandomMeme() {
     var arrayLength = memeArray.length;
     var selectedMeme = memeArray[getrandomIndex(arrayLength)]
+    var memeImage = $("<img>").attr("src", selectedMeme).addClass("responsive-img")
     console.log(selectedMeme)
-    return selectedMeme
-
+    $("#meme").append(memeImage)
   }
 
 
