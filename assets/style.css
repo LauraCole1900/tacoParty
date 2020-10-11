@@ -32,7 +32,7 @@ button:active, button:focus {
   background-color: #430000;
   background-image: url("shredded-beef.jpg");
   border-radius: 0 0 200px 200px;
-  /* shredded beef image from https://www.foxandbriar.com/slow-cooker-mexican-shredded-beef/*/
+  /* shredded beef image from https://www.foxandbriar.com/slow-cooker-mexican-shredded-beef/ */
 }
 
 .pageTop {
@@ -42,7 +42,7 @@ button:active, button:focus {
   text-shadow: 2px 2px 5px black, 2px 2px 5px black, 2px 2px 5px black, 2px 2px 5px black;
   padding: 0.5em 1em;
   background-image: url("shredded-lettuce.jpg");
-  /* shredded lettuce image from https://www.taylorfarmsfoodservice.com/products/iceberg-romaine/*/
+  /* shredded lettuce image from https://www.taylorfarmsfoodservice.com/products/iceberg-romaine/ */
 }
 
 .subtitle {
@@ -59,7 +59,7 @@ button:active, button:focus {
   text-shadow: 2px 2px 5px black, 2px 2px 5px black, 2px 2px 5px black, 2px 2px 5px black;
   border-left: 2px darkgoldenrod solid;
   border-right: 2px darkgoldenrod solid;
-  /* shredded cheese image from https://theoutline.com/post/6016/shredded-cheese-memes?zd=1&zi=tin5bojm*/
+  /* shredded cheese image from https://theoutline.com/post/6016/shredded-cheese-memes?zd=1&zi=tin5bojm */
 }
 
 .logo {
