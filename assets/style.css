@@ -171,13 +171,15 @@ img {
 .input-field input[type=text] {
   color: white;
   background: rgba(0,0,0,.7);
+  padding-left: 5px;
 }
 
-input[type=text]:focus + label {
+.input-field.input-outlined input[type=text]:focus + label {
   color:white;
 }
 
-.input-field input[type=text]:focus {
-  border-bottom: 1px solid #aa2c2c;
-  box-shadow: 0 1px 0 0 #000;
+.input-field.input-outlined input[type=text]:focus {
+  border: 3px solid #aa2c2c;
+  border-radius: 10px;
+  box-shadow: none;
 }
