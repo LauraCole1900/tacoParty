@@ -27,6 +27,13 @@ Materialize was used as a substitute for BootStrap, and helped us lay out the we
 
 # **Problems Faced**
 
+* The original API we had decided on using was not built for the API calls we would be using.
+    * After we were able to find an API that we could use, we struggled with actually defining the call correctly.
+
+* We were working with an unfamiliar framework, and therefore had to learn new ways to code our site to fit that frammework. 
+
+* The CocktailDB API listed its ingredients under individual keys instead of as an array, which required us to grab each ingredient line-by-line, and limited our ability to repurpose the code through loops and other functions.
+
 # **Credits**
 
 Brendon Hart
