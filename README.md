@@ -1,6 +1,6 @@
 # **Description**
 
-Taco Party is a resource to be used when the user is searching for taco recipe ideas. Using an API key, the user is able to either generate a random recipe, or view a list of recipes coupled with nitritional information. The user is also able to look at a selection of salsa and drink recipes. 
+Taco Party is a resource to be used when the user is searching for taco recipe ideas. Using an API key, the user is able to either generate a random recipe, or view a list of recipes coupled with nutritional information. The user is also able to look at a selection of salsa and drink recipes. 
 
 
 <strong>Screenshot of site:</strong> <img src="/assets/siteSS.png">
@@ -15,15 +15,15 @@ When the user first loads the site, they will be greeted with an animation that 
 
 # **Technologies Used**
 
-In this site: HTML, CSS, JavaScipt, and the materialize extension were used.
+In this site: HTML, CSS, JavaScript, third-party APIs, and the Materialize framework were used.
 <br>
 HTML was used to design the basic layout for the page, and provided div tags with appropriate ID's and classes as holding places for content population.
 <br>
 CSS was used to style all of the elements contained within the site, as well as add background images.
 <br>
-JavaScript was used to populate all of the content on the page using two different API's. Also used to define the functions that will randomly generate a taco or salsa recipe depending on what button is clicked. 
+JavaScript was used to populate all of the content on the page using two different third-party APIs. JavaScript was also used to define the functions that will randomly generate a taco or salsa recipe depending on what button is clicked. 
 <br>
-Materialize was used as a substitute for BootStrap, and helped us layout the website, as well as gave code snippets for things like the navigation bar. 
+Materialize was used as a substitute for BootStrap, and helped us lay out the website, as well as gave code snippets for things like the navigation bar. 
 
 # **Problems Faced**
 
@@ -38,4 +38,4 @@ Charlie Howard
 
 # **License**
 
-Business Source License Agreement (materialize)
+Business Source License Agreement (Materialize)
