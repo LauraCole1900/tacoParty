@@ -90,7 +90,7 @@ $(document).ready(function () {
         .text(response.hits[returnAnswer].recipe.label);
       var tacoImage = $("<img>")
         .addClass("card-img")
-        .attr("src", response.hits[returnAnswer].recipe.image);
+        .attr("src", response.hits[returnAnswer].recipe.image).addClass ("responsive-img");
       var tacoIngredients1 = $("<p>")
         .addClass("card-body")
         .text(response.hits[returnAnswer].recipe.ingredientLines[0])
@@ -141,7 +141,7 @@ $(document).ready(function () {
         .text(response.hits[returnAnswer].recipe.label);
       var salsaImage = $("<img>")
         .addClass("card-img")
-        .attr("src", response.hits[returnAnswer].recipe.image);
+        .attr("src", response.hits[returnAnswer].recipe.image).addClass ("responsive-img");
       var salsaIngredients1 = $("<p>")
         .addClass("card-body")
         .text(response.hits[returnAnswer].recipe.ingredientLines[0])

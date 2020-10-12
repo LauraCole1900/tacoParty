@@ -32,7 +32,7 @@ $(document).ready(function () {
             tacoHeadlineArray.push(tacoTitle);
 
             var tacoImg = $("<img>")
-            tacoImg.attr("src", response.hits[i].recipe.image).attr("class", "TgridImg").attr("id", i);
+            tacoImg.attr("src", response.hits[i].recipe.image).attr("class", "TgridImg").attr("id", i).addClass ("responsive-img");
             $("#tacoContent" + i).append(tacoImg);
             tacoImageArray.push(tacoImg);
 
@@ -95,7 +95,7 @@ $(document).ready(function () {
         itemDisplayImage = $("<img>");
         itemDisplayImage.removeClass("TgridImg");
         itemDisplayImage.attr("id", "heroImage")
-        itemDisplayImage.attr("src", response.hits[tacoCode].recipe.image);
+        itemDisplayImage.attr("src", response.hits[tacoCode].recipe.image).addClass ("responsive-img");
 
         $(".itemHeroHeadline").append(itemDisplayHeader);
         $(".itemHeroImage").append(itemDisplayImage);
@@ -107,7 +107,7 @@ $(document).ready(function () {
 
             // Ingredient Image
             var ingDiv = $("<div>").attr("class", "ingDiv")
-            var ingredientImage = $("<img>").attr("id", "ingImg");
+            var ingredientImage = $("<img>").attr("id", "ingImg").addClass ("responsive-img");
 
             // Populate Null Image if Null
             if (response.hits[tacoCode].recipe.ingredients[i].image === null) {
@@ -179,7 +179,7 @@ $(document).ready(function () {
 
             // Generate Salsa Images
             var salsaImg = $("<img>")
-            salsaImg.attr("src", response.hits[i].recipe.image).attr("class", "SgridImg").attr("id", i);
+            salsaImg.attr("src", response.hits[i].recipe.image).attr("class", "SgridImg").attr("id", i).addClass ("responsive-img");
             $("#salsaContent" + i).append(salsaImg);
             salsaImageArray.push(salsaImg);
 
@@ -244,7 +244,7 @@ $(document).ready(function () {
         itemDisplayImage = $("<img>");
         itemDisplayImage.removeClass("SgridImg");
         itemDisplayImage.attr("id", "heroImage")
-        itemDisplayImage.attr("src", response.hits[salsaCode].recipe.image);
+        itemDisplayImage.attr("src", response.hits[salsaCode].recipe.image).addClass ("responsive-img");
 
         $(".itemHeroHeadline").append(itemDisplayHeader);
         $(".itemHeroImage").append(itemDisplayImage);
@@ -256,7 +256,7 @@ $(document).ready(function () {
 
             // Ingredient Image
             var ingDiv = $("<div>").attr("class", "ingDiv")
-            var ingredientImage = $("<img>").attr("id", "ingImg");
+            var ingredientImage = $("<img>").attr("id", "ingImg").addClass ("responsive-img");
 
             // Populate Null Image if Null
             if (response.hits[salsaCode].recipe.ingredients[i].image === null) {
@@ -320,7 +320,7 @@ $(document).ready(function () {
 
 
             var drinkImg = $("<img>")
-            drinkImg.attr("src", response.drinks[i].strDrinkThumb).attr("id", "gridImg");
+            drinkImg.attr("src", response.drinks[i].strDrinkThumb).attr("id", "gridImg").addClass ("responsive-img");
             $("#drinkContent" + i).append(drinkImg);
 
         }
@@ -462,7 +462,7 @@ $(document).ready(function () {
 
 
             var drinkImg = $("<img>")
-            drinkImg.attr("src", response.drinks[(i - 4)].strDrinkThumb).attr("id", "gridImg");
+            drinkImg.attr("src", response.drinks[(i - 4)].strDrinkThumb).attr("id", "gridImg").addClass ("responsive-img");
             $("#drinkContent" + i).append(drinkImg);
 
         }
