@@ -40,12 +40,12 @@ Materialize was used as a substitute for BootStrap, and helped us lay out the we
 
 # **Credits**
 
-Brendon Hart
-Laura Cole
-Andy Greenhaw
-Anthony Miletello
-Jean Melendez
-Charlie Howard
+* Brendon Hart
+* Laura Cole
+* Andy Greenhaw
+* Anthony Miletello
+* Jean Melendez
+* Charlie Howard
 
 # **License**
 
