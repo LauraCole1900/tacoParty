@@ -7,50 +7,10 @@ $(document).ready(function () {
   // click taco gif to enter page
   $("#gif").on("click", function () {
     $(this).hide()
-    // $(".container").attr("style", "transition: filter 2s")
     $(".container").attr("style", "filter:none")
+    getRandomMeme()
   })
 
-
-
-
-
-  function tacoRecipe() {
-
-    getRandomMeme();
-
-
-
-    $.ajax({
-      method: "GET",
-      url: "https://api.edamam.com/search",
-      data: { app_id: "9febdf63", app_key: "81e8afa3f473280b371839961f1c44a0", q: "taco" },
-      dataType: "json",
-      error: function (jqXHR, textStatus, errorThrown) {
-        console.log("jqXHR" + jqXHR)
-        console.log("-------------------------------")
-        console.log("textStatus" + textStatus)
-        console.log("-------------------------------")
-        console.log("errorThrown" + errorThrown);
-      },
-      success: function (data, textStatus, jqXHR) {
-
-
-        console.dir(data)
-        console.log("-------------------------------")
-        console.log("textStatus: " + textStatus)
-        console.log("-------------------------------")
-        console.log("jqXHR: " + jqXHR);
-
-        var element = document.getElementById("randomMeme");
-        element.src = getRandomMeme();
-
-        a
-
-      }
-    }
-    );
-  }
 
   function getrandomIndex(max) {
     return Math.floor(Math.random() * Math.floor(max))
@@ -90,7 +50,9 @@ $(document).ready(function () {
   function getRandomMeme() {
     var arrayLength = memeArray.length;
     var selectedMeme = memeArray[getrandomIndex(arrayLength)]
+    var memeImg = $("<img>").attr("src", "selectedMeme").addClass("responsive-img")
     console.log(selectedMeme)
+    $("#meme").append(memeImg)
     return selectedMeme
 
   }

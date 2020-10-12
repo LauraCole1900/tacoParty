@@ -68,7 +68,7 @@ button:active, button:focus {
   border: 3px solid #430000;
 }
 
-.genBtn {
+.genBtn, #meme {
   text-align: center;
 }
 
