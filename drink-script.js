@@ -3,6 +3,11 @@ var apiKey = "1"
 
 
 $(document).ready(function () {
+
+
+  // makes hamburger button function for mobile
+  $(".sidenav").sidenav();
+
   $("#searchBtn").on("click", function () {
     var drinkType = $("#searchInput").val()
     $("#searchInput").val("")
@@ -34,7 +39,6 @@ $(document).ready(function () {
         cardBody.append(name, recipe1, recipe2, recipe3, recipe4, recipe5, instructions)
         card.append(cardBody)
         $("#drinkType").append(card)
-        drinkSearch(drinkType)
 
       }
     })

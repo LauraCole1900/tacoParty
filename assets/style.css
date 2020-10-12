@@ -1,16 +1,17 @@
 body {
   background-color: #e1dd00;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   background-image: url("taco-shell.jpg");
   /* taco shell image taken by Brendon Hart */
 }
 
 h2 {
-  font-family: 'Luckiest Guy', cursive;
+  font-family: "Luckiest Guy", cursive;
   text-align: center;
   font-size: 3em;
   color: white;
-  text-shadow: 2px 2px 5px black, 2px 2px 5px black, 2px 2px 5px black, 2px 2px 5px black;
+  text-shadow: 2px 2px 5px black, 2px 2px 5px black, 2px 2px 5px black,
+    2px 2px 5px black;
 }
 
 button {
@@ -24,7 +25,8 @@ button {
   font-size: 1.25em;
 }
 
-button:active, button:focus {
+button:active,
+button:focus {
   background-color: #aa2c2c;
 }
 
@@ -39,7 +41,8 @@ button:active, button:focus {
   background-color: #00800d;
   color: white;
   font-style: italic;
-  text-shadow: 2px 2px 5px black, 2px 2px 5px black, 2px 2px 5px black, 2px 2px 5px black;
+  text-shadow: 2px 2px 5px black, 2px 2px 5px black, 2px 2px 5px black,
+    2px 2px 5px black;
   padding: 0.5em 1em;
   background-image: url("shredded-lettuce.jpg");
   /* shredded lettuce image from https://www.taylorfarmsfoodservice.com/products/iceberg-romaine/ */
@@ -48,15 +51,17 @@ button:active, button:focus {
 .subtitle {
   color: white;
   font-style: italic;
-  font-family: 'Luckiest Guy', cursive;
-  text-shadow: 2px 2px 5px black, 2px 2px 5px black, 2px 2px 5px black, 2px 2px 5px black;
+  font-family: "Luckiest Guy", cursive;
+  text-shadow: 2px 2px 5px black, 2px 2px 5px black, 2px 2px 5px black,
+    2px 2px 5px black;
   font-size: 2em;
 }
 
 .nav-wrapper {
   background-color: #b48400;
   background-image: url("shredded-cheese.jpg");
-  text-shadow: 2px 2px 5px black, 2px 2px 5px black, 2px 2px 5px black, 2px 2px 5px black;
+  text-shadow: 2px 2px 5px black, 2px 2px 5px black, 2px 2px 5px black,
+    2px 2px 5px black;
   border-left: 2px darkgoldenrod solid;
   border-right: 2px darkgoldenrod solid;
   /* shredded cheese image from https://theoutline.com/post/6016/shredded-cheese-memes?zd=1&zi=tin5bojm */
@@ -68,12 +73,13 @@ button:active, button:focus {
   border: 3px solid #430000;
 }
 
-.genBtn, #meme {
+.genBtn,
+#meme {
   text-align: center;
 }
 
 #tagline {
-  font-family: 'Luckiest Guy', cursive;
+  font-family: "Luckiest Guy", cursive;
   font-size: 5em;
 }
 
@@ -102,64 +108,230 @@ button:active, button:focus {
   background-color: #430000;
 }
 
-/* ANDY ADDITIONS */
+/* ------------------------------------------------- */
+/* ANDY ADDITIONS - LET ME KNOW IF ANYTHING OVERLAPS */
+/* ------------------------------------------------- */
 
-/* This is the headline style I'm using for each recipe */
-#gridHeadlines {
-  font-size: 18px;
+/* ----------------- */
+/* GRID MENU PAGES */
+/* ----------------- */
+
+/* Adds Finger Pointer to Cursor When Headline Hovering */
+.TgridHeadlines {
   color: white;
+  cursor: pointer;
 }
 
-/* Boxes: These Control Each Box Recipes Appear Inside */
-.tacoBox {
-  height: 1000px;
-  text-align: center;
-  background: rgba(0,0,0,.7);
+.SgridHeadlines {
+  color: white;
+  cursor: pointer;
+}
 
+#gridHeadlines {
+  color: white;
+  cursor: pointer;
+}
+
+#gridImg {
+  width: 250px;
+  cursor: pointer;
+}
+
+/* Controls the Grid Headlines */
+h3 {
+  color: white;
+  font-size: 16px;
+  height: 40px;
+  margin-top: 40px;
+  font-weight: bolder;
+  font-family: "Nunito", sans-serif;
+}
+
+/* Control Each Box Recipes Appear Inside the Grid System */
+
+.tacoBox {
+  color: white;
+  height: auto;
+  text-align: center;
+  /* background: rgba(0,0,0,.7); */
 }
 
 .salsaBox {
-  height: 650px;
+  color: white;
+  height: auto;
   text-align: center;
-  background: rgba(0,0,0,.7);
+  /* background: rgba(0,0,0,.7); */
 }
 
 .drinkBox {
   height: 550px;
   text-align: center;
-  background: rgba(0,0,0,.7);
+  /* background: rgba(0,0,0,.7); */
 }
 
-/* This resizes the Recipe image to fit columns */
+/* Adds Dark Background to Meat for Copy Pop */
 
-img {
+.allItemsBackground {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 0 0 200px 200px;
+}
+
+/* Resizes all Images in the Grid to Not Look Stupid */
+
+.TgridImg {
   width: 250px;
+  cursor: pointer;
 }
 
-/* This styles all the Recipe copy */
+.SgridImg {
+  width: 250px;
+  cursor: pointer;
+}
+
+/* Obsolete: Controlled Recipe Copy on Menu */
 
 .tacoRecipes {
   font-size: 12px;
   color: white;
-  text-align:left;
+  text-align: left;
+  font-family: "Nunito", sans-serif;
 }
 
 .salsaRecipes {
   font-size: 12px;
   color: white;
-  text-align:left;
+  text-align: left;
+  font-family: "Nunito", sans-serif;
 }
 
 .drinkRecipes {
-  font-size: 12px;
+  font-size: 16px;
   color: white;
-  text-align:left;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+}
+
+/* ----------------- */
+/* DISPLAY ITEM PAGE */
+/* ----------------- */
+
+/* Controls Headline of Clicked Item */
+
+h4 {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+}
+
+/* Displays "Ingredients" Headline*/
+
+h5 {
+  color: white;
+  font-size: 26px;
+  text-align: left;
+  font-family: "Nunito", sans-serif;
+}
+
+/* Controls Image of Clicked Item */
+
+#heroImage {
+  text-align: center;
+  border-radius: 200px 200px 200px 200px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/* Div Controller for Headline */
+
+.itemHeroHeadline {
+  height: auto;
+  width: 100%;
+  color: white;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  /* background: rgba(0,0,0,.7); */
+}
+
+/* Div Controller for Image */
+
+.itemHeroImage {
+  height: 10000;
+  width: 100%;
+  color: white;
+  /* padding-bottom: 50px;  */
+  text-align: center;
+}
+
+/* Ingredient Icon Column */
+.iconCol {
+  height: auto;
+
+  /* Ingredient Details Column */
+}
+.ingredientCol {
+  height: auto;
+}
+
+/* Div Container/Controller for Icon and Details */
+.ingDiv {
+  display: block;
+  color: white;
+  margin-top: 10px;
+  padding-bottom: 50px;
+  /* margin-bottom:50px; */
+  height: 50px;
+}
+
+/* Div Container/Controller for Nutrition Details */
+.nutDiv {
+  display: block;
+  color: white;
+  margin-top: 10px;
+  padding-bottom: 50px;
+  /* margin-bottom:50px; */
+  height: 50px;
+}
+
+/* Controls Icon */
+#ingImg {
+  text-align: right;
+  border-radius: 200px 200px 200px 200px;
+  width: 50px;
+  /* margin-top: 20px; */
+}
+
+/* Controls Ingredient Copy */
+#ingredient {
+  color: white;
+  width: 100%;
+  text-decoration: rgb(212, 202, 202);
+  font-size: 18px;
+  padding-top: 10px;
+}
+
+/* Controls Nutrition Copy */
+#nutrition {
+  color: white;
+  width: 100%;
+  text-decoration: rgb(212, 202, 202);
+  font-size: 26px;
+  font-weight: bolder;
+  margin-top: 40px;
+}
+
+/* Adds Spacing to End of Grid Menu and Display Pages*/
+#footerSpacing {
+  height: 50px;
 }
 
 /* Brendon added this */
 .card {
   text-align: center;
-  background: rgba(0,0,0,.7);
+  background: rgba(0, 0, 0, 0.7);
   color: white;
 }
 
@@ -168,17 +340,17 @@ img {
   color: white;
 }
 
-.input-field input[type=text] {
+.input-field input[type="text"] {
   color: white;
-  background: rgba(0,0,0,.7);
+  background: rgba(0, 0, 0, 0.7);
   padding-left: 5px;
 }
 
-.input-field.input-outlined input[type=text]:focus + label {
-  color:white;
+.input-field.input-outlined input[type="text"]:focus + label {
+  color: white;
 }
 
-.input-field.input-outlined input[type=text]:focus {
+.input-field.input-outlined input[type="text"]:focus {
   border: 3px solid #aa2c2c;
   border-radius: 10px;
   box-shadow: none;

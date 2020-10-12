@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,9 +10,8 @@
   <link rel="stylesheet" href="assets/style.css">
   <title>Taco Party!</title>
 </head>
-
 <body>
-  <div id="blur" class="container">
+  <div class="container">
     <!-- header -->
     <header class="pageTop">
       <h1 id="tagline">Taco Party</h1>
@@ -25,12 +23,12 @@
     <!-- Navigation -->
     <nav>
       <div class="nav-wrapper">
-        <a href="#" class="brand-logo"><img src="assets/Taco-Party-with-border_00000.png" alt="taco party logo"
+        <a href="index.html" class="brand-logo"><img src="assets/Taco-Party-with-border_00000.png" alt="taco party logo"
             class="logo responsive-img" /></a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="tacoRecipes.html">Tacos</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="#">Tacos</a></li>
           <li><a href="salsaRecipes.html">Salsas</a></li>
           <li><a href="drinks.html">Beverages</a></li>
         </ul>
@@ -39,53 +37,52 @@
 
     <!-- Mobile navigation -->
     <ul class="sidenav" id="mobile-demo">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="tacoRecipes.html">Tacos</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li class="active"><a href="#">Tacos</a></li>
       <li><a href="salsaRecipes.html">Salsas</a></li>
       <li><a href="drinks.html">Beverages</a></li>
     </ul>
 
-    <!-- Main content -->
-    <main class="row">
+    <!-- Item Displayer -->      
+    
+    <main class="row allItemsBackground">
 
-      <!-- Random taco recipe -->
-      <div class="col m8 offset-m2" id="tacoRecipe">
-        <h2 class="taco">Taco recipe</h2>
-        <div class="genBtn" id="tacoGen">
-          <button class="tacoButton">Generate a Random Taco</button>
+        <!-- Item Headline Spans 12 Cols -->
+        <div class="col s12 itemHeroHeadline">
         </div>
-        <div id="randomTaco"></div>
-      </div>
+
+            <!-- Main Item Clicked Takes Up LeftHalf Col -->
+            <div class="col s6 itemHeroImage">
+            </div>
+            
+            <!-- Ingredient Headline Takes Up Right-Half Col -->
+            <div class="col s6 ingredientHeadline">
+            </div>
+            
+            <!-- Two Ingredient Cols Within Ingredient Headline -->
+
+                <!-- Icon -->
+                <div class="col s1 iconCol">
+                </div>
+                <!-- Ingredient -->
+                <div class="col s5 ingredientCol">
+                </div>
+
+            <!-- Footer for Spacing -->
+            <div class="col s-12" id="footerSpacing">      
+            </div>
+
     </main>
-
-    <section class="row">
-      <!-- Salsa recipe -->
-      <div class="col m6" id="salsaRecipe">
-        <h2 class="salsa">Try a salsa</h2>
-        <div class="genBtn" id="salsaGen">
-          <button class="salsaButton">Generate a random Salsa</button>
-        </div>
-        <div id="randomSalsa"></div>
-      </div>
-
-      <!-- Taco memes -->
-      <div class="col m6">
-        <h2 class="funny">Taco funny</h2>
-        <div id="meme"></div>
-      </div>
-    </section>
-  </div>
-
-  <div id="gif">
-    <img src="assets/taco-gif3--final-4.gif" alt="dancing taco button" />
-    <!-- original dancing taco gif from https://media3.giphy.com/media/3o6ZtkmiFtpBvii6uQ/giphy.gif?cid=ecf05e47bytkwul5u8oi8wkl98zlnebkmx4uo4upjmwet9ua&rid=giphy.gif-->
+    
+    <!-- Container Ends -->
   </div>
 
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
-  <script src="assets/materialize/js/materialize.js" type="text/javascript"></script>
-  <script src="assets/script.js" type="text/javascript"></script>
+  <script src="assets/materialize/js/materialize.min.js" type="text/javascript"></script>
+  <script src="allTacoRecipeScript.js" type="text/javascript"></script>
+
 </body>
 
 </html>
