@@ -11,10 +11,12 @@ $(document).ready(function () {
     getRandomMeme()
   })
 
-
+  
   function getrandomIndex(max) {
     return Math.floor(Math.random() * Math.floor(max))
   }
+
+  // Anthony
   var memeArray = [
 
     "https://i.pinimg.com/736x/e3/6f/40/e36f40e3cad00b1169c6adc3df103c4d.jpg",
@@ -58,80 +60,122 @@ $(document).ready(function () {
   }
 
 
-});
 
-var appKey = "9b50da828a1dfe82773e9e4c27d62609";
-var appId = "50ec7bea";
-var urlID =
-  "https://api.edamam.com/search?q=taco&app_id=" + appId + "&app_key=" + appKey;
-var urlID2 = "https://api.edamam.com/search?q=salsa&app_id=" + appId + "&app_key=" + appKey;
-
-
-$(".tacoButton").on("click", function(){
+  // Brendon
+  var appKey = "9b50da828a1dfe82773e9e4c27d62609";
+  var appId = "50ec7bea";
+  var urlID =
+    "https://api.edamam.com/search?q=taco&app_id=" + appId + "&app_key=" + appKey;
+  var urlID2 = "https://api.edamam.com/search?q=salsa&app_id=" + appId + "&app_key=" + appKey;
+  $(".tacoButton").on("click", function () {
     getTaco()
-})
-
-$(".salsaButton").on("click", function(){
+  })
+  $(".salsaButton").on("click", function () {
     getSalsa()
-})
-
-function getTaco() {
-  $.ajax({
-    url: urlID,
-    method: "GET",
-    crossDomain: true,
-    dataType: "jsonp",
-  }).then(function (response) {
+  })
+  function getTaco() {
+    $.ajax({
+      url: urlID,
+      method: "GET",
+      crossDomain: true,
+      dataType: "jsonp",
+    }).then(function (response) {
       console.log(response)
-
-        $("#randomTaco").empty()
-
-        var returnAnswer = Math.floor(Math.random() * 9) + 1
-
-        var tacoPlace = $("<div>").addClass("card")
-        var tacoTitle = $("<h2>")
+      $("#randomTaco").empty()
+      var returnAnswer = Math.floor(Math.random() * 9) + 1
+      var tacoPlace = $("<div>").addClass("card tacoDiv")
+      var tacoTitle = $("<h3>")
         .addClass("tacoTitle")
         .text(response.hits[returnAnswer].recipe.label);
-        var tacoImage = $("<img>")
+      var tacoImage = $("<img>")
         .addClass("card-img")
         .attr("src", response.hits[returnAnswer].recipe.image);
-        var tacoIngredients = $("<p>")
+      var tacoIngredients1 = $("<p>")
         .addClass("card-body")
-        .text(response.hits[returnAnswer].recipe.ingredientLines)
-
-        tacoPlace.append(tacoTitle, tacoImage, tacoIngredients)
-        $("#randomTaco").append(tacoPlace)
-
-    })}
-
-    function getSalsa() {
-        $.ajax({
-          url: urlID2,
-          method: "GET",
-          crossDomain: true,
-          dataType: "jsonp",
-        }).then(function (response) {
-            console.log(response)
-      
-              $("#randomSalsa").empty()
-      
-              var returnAnswer = Math.floor(Math.random() * 9) + 1
-      
-              var salsaPlace = $("<div>").addClass("card")
-              var salsaTitle = $("<h3>")
-              .addClass("salsaTitle")
-              .text(response.hits[returnAnswer].recipe.label);
-              var salsaImage = $("<img>")
-              .addClass("card-img")
-              .attr("src", response.hits[returnAnswer].recipe.image);
-              var salsaIngredients = $("<p>")
-              .addClass("card-body")
-              .text(response.hits[returnAnswer].recipe.ingredientLines)
-      
-              salsaPlace.append(salsaTitle, salsaImage, salsaIngredients)
-              $("#randomSalsa").append(salsaPlace)
-      
-          })}
+        .text(response.hits[returnAnswer].recipe.ingredientLines[0])
+      var tacoIngredients2 = $("<p>")
+        .addClass("card-body")
+        .text(response.hits[returnAnswer].recipe.ingredientLines[1])
+      var tacoIngredients3 = $("<p>")
+        .addClass("card-body")
+        .text(response.hits[returnAnswer].recipe.ingredientLines[2])
+      var tacoIngredients4 = $("<p>")
+        .addClass("card-body")
+        .text(response.hits[returnAnswer].recipe.ingredientLines[3])
+      var tacoIngredients5 = $("<p>")
+        .addClass("card-body")
+        .text(response.hits[returnAnswer].recipe.ingredientLines[4])
+      var tacoIngredients6 = $("<p>")
+        .addClass("card-body")
+        .text(response.hits[returnAnswer].recipe.ingredientLines[5])
+      var tacoIngredients7 = $("<p>")
+        .addClass("card-body")
+        .text(response.hits[returnAnswer].recipe.ingredientLines[6])
+      var tacoIngredients8 = $("<p>")
+        .addClass("card-body")
+        .text(response.hits[returnAnswer].recipe.ingredientLines[7])
+      var tacoIngredients9 = $("<p>")
+        .addClass("card-body")
+        .text(response.hits[returnAnswer].recipe.ingredientLines[8])
+      var tacoIngredients10 = $("<p>")
+        .addClass("card-body")
+        .text(response.hits[returnAnswer].recipe.ingredientLines[9])
+      tacoPlace.append(tacoTitle, tacoImage, tacoIngredients1, tacoIngredients2, tacoIngredients3, tacoIngredients4, tacoIngredients5, tacoIngredients6, tacoIngredients7, tacoIngredients8, tacoIngredients9, tacoIngredients10)
+      $("#randomTaco").append(tacoPlace)
+    })
+  }
+  function getSalsa() {
+    $.ajax({
+      url: urlID2,
+      method: "GET",
+      crossDomain: true,
+      dataType: "jsonp",
+    }).then(function (response) {
+      console.log(response)
+      $("#randomSalsa").empty()
+      var returnAnswer = Math.floor(Math.random() * 9) + 1
+      var salsaPlace = $("<div>").addClass("card salsaDiv")
+      var salsaTitle = $("<h3>")
+        .addClass("salsaTitle")
+        .text(response.hits[returnAnswer].recipe.label);
+      var salsaImage = $("<img>")
+        .addClass("card-img")
+        .attr("src", response.hits[returnAnswer].recipe.image);
+      var salsaIngredients1 = $("<p>")
+        .addClass("card-body")
+        .text(response.hits[returnAnswer].recipe.ingredientLines[0])
+      var salsaIngredients2 = $("<p>")
+        .addClass("card-body")
+        .text(response.hits[returnAnswer].recipe.ingredientLines[1])
+      var salsaIngredients3 = $("<p>")
+        .addClass("card-body")
+        .text(response.hits[returnAnswer].recipe.ingredientLines[2])
+      var salsaIngredients4 = $("<p>")
+        .addClass("card-body")
+        .text(response.hits[returnAnswer].recipe.ingredientLines[3])
+      var salsaIngredients5 = $("<p>")
+        .addClass("card-body")
+        .text(response.hits[returnAnswer].recipe.ingredientLines[4])
+      var salsaIngredients6 = $("<p>")
+        .addClass("card-body")
+        .text(response.hits[returnAnswer].recipe.ingredientLines[5])
+      var salsaIngredients7 = $("<p>")
+        .addClass("card-body")
+        .text(response.hits[returnAnswer].recipe.ingredientLines[6])
+      var salsaIngredients8 = $("<p>")
+        .addClass("card-body")
+        .text(response.hits[returnAnswer].recipe.ingredientLines[7])
+      var salsaIngredients9 = $("<p>")
+        .addClass("card-body")
+        .text(response.hits[returnAnswer].recipe.ingredientLines[8])
+      var salsaIngredients10 = $("<p>")
+        .addClass("card-body")
+        .text(response.hits[returnAnswer].recipe.ingredientLines[9])
+      salsaPlace.append(salsaTitle, salsaImage, salsaIngredients1, salsaIngredients2, salsaIngredients3, salsaIngredients4, salsaIngredients5, salsaIngredients6, salsaIngredients7, salsaIngredients8, salsaIngredients9, salsaIngredients10)
+      $("#randomSalsa").append(salsaPlace)
+    })
+  }
+});
 
 
   // look up img tags in HTML for memeArray
