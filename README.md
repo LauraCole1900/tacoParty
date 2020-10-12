@@ -30,11 +30,11 @@ Materialize was used as a substitute for BootStrap, and helped us lay out the we
 * The original API we had decided on using was not built for the API calls we would be using.
     * After we were able to find an API that we could use, we struggled with actually defining the call correctly.
 
-* We were working with an unfamiliar framework, and therefore had to learn new ways to code our site to fit that frammework. 
+* We were working with an unfamiliar framework, and therefore had to learn new ways to code our site to fit that framework. 
 
 * The CocktailDB API listed its ingredients under individual keys instead of as an array, which required us to grab each ingredient line-by-line, and limited our ability to repurpose the code through loops and other functions.
 
-* The differences between CocktailDB and Edamum’s ways of organizing information inhibited our ability to intertwine the two within the same looping systems, but this challenge also enabled us to separate alcoholic and non-alcoholic content in a way that maintains a brand design for all ages.
+* The differences between CocktailDB and Edamam’s ways of organizing information inhibited our ability to intertwine the two within the same looping systems, but this challenge also enabled us to separate alcoholic and non-alcoholic content in a way that maintains a brand design for all ages.
 
 * We were limited with our API test key in only being able to pull a finite number of food or drink items, which capped our ability to design beyond the number nine. 
 
